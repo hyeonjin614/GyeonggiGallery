@@ -1,0 +1,665 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+
+@font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-1Thin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChosunSg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    max-width: 1920px;
+}
+
+li { 
+    list-style:none;
+}
+
+a { 
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.fas span { 
+    position: absolute;
+    left: -99999px;
+
+    }
+
+header .fas {
+    display: none;
+}
+
+/* header */
+
+
+
+header {
+    width: 100%;
+    height: 100px; 
+    line-height: 100px;
+    /* 헤더 높이 */
+    text-align: center;
+    position: fixed;
+  
+    z-index: 99;
+    background-color: #fff;
+    
+}
+
+header img {
+    /* 로고 이미지 */
+    width: 270px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+/* 메뉴바 설정 */
+
+header  div {
+    width: 1280px;
+    margin: 0 auto;
+
+    height: 100%;
+    
+}
+
+
+header nav {
+    /* 메뉴바 전체 */
+    width: 100%;
+    height: 60px;
+    
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+
+    /* 메뉴바 상단 하단 구분선 */
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+  
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-family: 'S-CoreDream-1Thin';
+    font-family: 'ChosunSg';
+    
+ 
+}
+
+header .menu {
+    width:1200px;
+   
+    margin: 0 auto;
+
+    height: 100px;
+}
+
+.menu > li {
+ 
+    vertical-align: top;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+header nav .depth01 {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    width: 130px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px; 
+
+
+}
+
+header .depth02 {
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: none;
+
+}
+
+header nav .depth01:hover {
+    background-color: #fff;
+    /* border: 1px solid #333; */
+
+}
+
+header nav .depth01:hover .depth02 {
+    display: block;
+   
+}
+
+
+/* cont01 관람시간 안내  */
+
+.cont01 {
+
+    padding-top: 200px;
+
+    width: calc(100% - 150px);
+    height: 100px;
+    margin: 0 auto;
+    background-color: blue;
+    position: relative;
+    
+}
+
+.cont01 ul {
+    display: block;
+    position: absolute;
+    left: 15%;
+
+}
+
+.cont01 ul li {
+    margin:  10px 0;
+}
+
+/* cont01 p 태그 버튼들 */
+
+.cont01 p:first-child {
+    /* 관람시간 버튼 */
+    
+    position: absolute;
+    left: 6%;
+    font-size: 22px;
+}
+
+.cont01 p:last-child {
+    /* 전시 정보 보러가기 버튼 */
+        position: absolute;
+        right: 0;
+        width: 300px;
+        height: 74px;
+        line-height: 74px;
+        text-align: center;
+        font-size: 18px;
+
+        background-color: #333;
+        color: #fff;
+}
+
+/* 메인 비주얼  */
+
+.main_visual {
+    width: 100%;
+    padding-top: 160px;
+}
+
+.main_visual img {
+    width: 100%;
+    display: block;
+    /* display: none; */
+    
+}
+
+/* di-지모마 cont02 */
+
+.cont02 {
+    width: calc(100% -220px); 
+}
+
+.cont02 .cont02_in {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cont02 .cont02_in img {
+    /* 디 지모마 이미지 */
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+/* 지모마 버튼 */
+
+.cont02 .cont02_in p:first-of-type {
+    /* 경기도미술관이 새롭게 시도하는~ */
+
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+
+    line-height: 95px;
+    margin-top: 30px;
+
+}
+
+.cont02 .cont02_in p:last-of-type {
+
+    /* 비대면 미술관 + 버튼 */
+
+    width: 310px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+
+
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #333;
+
+    margin-top: 50px;
+    margin-bottom: 98px;
+    transition: 0.4s ease-in-out;
+
+    font-family: 'ChosunSg';
+    
+}
+
+.cont02 .cont02_in p:last-of-type:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* cont03 */
+
+/* 소장품 */
+
+.cont03 {
+    background-color: #f5f5f5;
+    text-align: center;
+ 
+}
+
+.cont03 p:first-of-type {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 45px;
+
+}
+
+
+
+.cont03 div {
+    display: inline-block;
+    width: 480px;
+    margin-right: 20px;
+    padding-bottom: 100px;
+
+}
+
+.cont03 div dl {
+/* 작품설명 wrap */
+    margin-top: 50px;
+    text-align: left;
+ 
+}
+
+.cont03 div dl dt {
+    /* 작가명 */
+    
+    font-size: 22px;
+    margin-bottom: 15px;
+
+    /* 작가명과 제목 여백 */
+    padding-top: 20px;
+    border-top: 2px solid #333;
+}
+
+
+
+/* cont04 공지사항 */
+
+.cont04 {
+ 
+    height: 500px;
+
+    margin: 0 auto;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+
+    /* 콘텐츠 중앙 보내기 */
+    padding: 70px 90px;
+
+  
+}
+
+.cont04 .cont04_wrap {
+    /* width: 1100px; */
+    /* text-align: center; */
+    margin: 0 auto;
+    
+}
+
+.cont04 .cont04_in {
+    margin: 0 auto;
+   
+
+}
+
+
+.cont04 .cont01_in table::after {
+    content: '';
+    display: block; 
+    clear: both;
+    
+}
+
+.cont04 .cont04_in01 {
+    background-color: brown;
+    width: 50%;
+    float: left; 
+    vertical-align: bottom;
+}
+
+.cont04 .cont04_in table {
+    width: 40%;
+    /* background-color: antiquewhite; */
+    border-collapse:collapse; /* 선 붙이기 */
+    float: left;
+
+}
+
+
+.cont04 .cont04_in th {
+    /* 공지사항 */
+    font-size: 30px;
+    vertical-align: top;
+    padding-bottom: 60px;
+  
+  
+    
+}
+
+.cont04 .cont04_in table td {
+    /* 공지사항 라인 */
+    border-top: 2px solid #333;
+  
+    line-height: 67px;
+    
+}
+
+.cont04 table .cont04_in th {
+    /* 공지사항 아래 여백 */
+    padding-bottom: 40px;
+}
+
+.cont04 .cont04_in table tr:last-of-type td {
+    /* 공지사항 마지막 글 */
+    border-bottom: 2px solid #333;
+    
+}
+
+
+.cont04 .cont04_in02 {
+    /* 이벤트 */
+    /* background-color: burlywood; */
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+
+}
+
+.cont04 .cont04_in .cont04_img img {
+    margin-right: 20px;
+   
+    height: 360px;
+}
+
+.cont04 .cont04_in .cont04_img img:last-child {
+    margin: 0;
+}
+
+
+.cont04 .cont04_in02 p {
+    /* 이벤트 */
+    font-size: 30px;
+    font-weight: bold;
+
+    /* 이벤트 글 이미지 사이 여백 */
+    margin-bottom: 40px;
+}
+
+.cont04 .cont04_in02 .cont04_img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    
+}
+
+
+/* cont05 뉴스레터 */
+
+.cont05 {
+    width: 100%;
+    text-align: center;
+
+    
+}
+
+.cont05 p {
+    /* 경기도 미술관의 전시 정보와~ */
+    font-size: 18px;
+   
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-family: 'ChosunSg';
+    
+
+}
+
+.cont05 .cont05_wrap {
+    width: 1000px;
+    /* background-color: antiquewhite; */
+    margin: 0 auto;
+}
+.cont05 .cont05_wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.cont05 .email .email_in_button {
+    width: 20px;
+    height: 20px;
+}
+
+.cont05 .email_in {
+    margin: 0 auto;
+   
+  
+}
+
+.cont05 input {
+    /* 이메일 입력 칸 */
+    width: 300px;
+    height: 40px;
+    padding-left: 12px; /* 글자 여백 */
+
+    vertical-align: bottom;
+
+}
+
+.cont05 .email .xi-arrow-right {
+    /* 메일 화살표 xi */
+    width: 44px;
+    height: 44px;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 10%;
+
+    background-color: #333;
+    color: #fff;
+
+    
+}
+
+
+
+/* 푸터 */
+
+footer {
+    width: 100%;
+    height: 300px;
+    /* 푸터 상단 여백 */
+    margin-top: 100px;
+    padding-top: 60px;
+    background-color: #333;
+    
+}
+
+
+footer .footer_wrap {
+    width: calc(100% - 220px);
+    margin: 0 auto;
+}
+
+
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer .footer_01 {
+    width: 50%;
+    float: left;
+
+}
+
+footer .footer_01 ul li {
+    display: inline-block;
+
+    margin-top: 20px;
+    color: #fff;
+    
+}
+
+footer .footer_01 img {
+    /* 경기도 미술관 로고 */
+    margin-bottom: 20px ;
+    height: 90px;
+}
+
+
+footer .footer_01 p {
+    color: #4d4d4d;
+    margin-top: 20px;
+}
+
+/* footer_02 오른쪽 */
+
+footer .footer_02 {
+   
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+footer .footer_02 .footer_02_01 {
+    /* sns 로고 */
+    margin-top: 35px;
+    float: right;
+}
+
+footer .footer_02 .footer_02_01 img:first-of-type {
+    /* 페이스북 */
+    width: 50px;
+}
+
+footer .footer_02 .footer_02_01 img:nth-of-type(2) {
+    /* 인스타 */
+    width: 50px;
+}
+
+footer .footer_02 .footer_02_01 img:nth-of-type(2) {
+    margin-left: 20px;
+}
+
+footer .footer_02 .footer_02_01 img:last-of-type {
+    /* 경기문화재단 이미지 */
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+footer .footer_02 .footer_02_02 {
+    position: absolute;
+    right: 0;
+    bottom:0;
+
+}
+
+footer .footer_02 .footer_02_02 li {
+    display: inline-block;
+    margin-left: 40px;
+    color: #fff;
+}
+
+footer .footer_02 .footer_02_02 li a{
+
+    color: #4d4d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
